@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import TrainingContent from './components/TrainingContent';
+import Header from './components/01_LandingPage/Header';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
       <main>
-        <TrainingContent />
+        
       </main>
     </div>
   );
-}
+};
 
 export default App;
