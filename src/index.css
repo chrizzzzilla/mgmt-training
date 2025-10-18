@@ -9,7 +9,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #343541;
 }
 
 code {
@@ -17,20 +16,13 @@ code {
     monospace;
 }
 
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 6px;
+/* Shake Animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-3px); }
+  20%, 40%, 60%, 80% { transform: translateX(3px); }
 }
 
-::-webkit-scrollbar-track {
-  background: #2a2b32;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #565869;
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #6e6f80;
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
 }
